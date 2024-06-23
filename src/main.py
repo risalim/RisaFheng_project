@@ -10,7 +10,7 @@ with st.form("form") :
   scrape_button = st.form_submit_button("Scrape")
   if scrape_button and urls != "" :
 
-    urls = urls.split("\n)
+    urls = urls.split("\n")
 
     
     for url in urls :
