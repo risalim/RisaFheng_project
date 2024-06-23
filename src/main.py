@@ -3,7 +3,7 @@ import requests
 from bs4 import BeautifulSoup
 
 st.title("NLP Service")
-st.text_area(label="Enter URLs")
+urls = st.text_area(label="Enter URLs")
 
 for url in urls :
   page = requests.get(URL)
