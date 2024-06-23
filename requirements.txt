@@ -1,2 +1,10 @@
 streamlit
 streamlit-option-menu
+base64
+json
+pickle
+re
+uuid
+datetime import datetime
+pathlib import Path
+pandas
