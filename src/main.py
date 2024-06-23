@@ -11,7 +11,7 @@ with st.form("form") :
   if scrape_button and urls != "" :
 
     urls = urls.split("\n")
-
+    st.write(urls)
     
     for url in urls :
       page = requests.get(URL)
