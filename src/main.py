@@ -7,10 +7,9 @@ st.title("NLP Service")
 
 with st.form("form") :
   urls = st.text_area(label="Enter URLs")
-  if urls != "" :
-    scrape_button = st.form_submit_button("Scrape")
-    if scrape_button :
-      for url in urls :
-        page = requests.get(URL)
-        soup = BeautifulSoup(page.content, "html.parser")
-        st.write("soup", soup)
+  scrape_button = st.form_submit_button("Scrape")
+  if scrape_button and urls != "" :
+    for url in urls :
+      page = requests.get(URL)
+      soup = BeautifulSoup(page.content, "html.parser")
+      st.write("soup", soup)
