@@ -1,10 +1,1 @@
 streamlit
-streamlit-option-menu
-base64
-json
-pickle
-re
-uuid
-datetime
-pathlib
-pandas
