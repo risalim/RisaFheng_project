@@ -14,6 +14,6 @@ with st.form("form") :
     st.write(urls)
     
     for url in urls :
-      page = requests.get(URL)
+      page = requests.get(url)
       soup = BeautifulSoup(page.content, "html.parser")
       st.write("soup", soup)
