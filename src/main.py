@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup
 st.title("NLP Service")
 
 
-st.form("form") :
+with st.form("form") :
   urls = st.text_area(label="Enter URLs")
   if urls != "" :
     scrape_button = st.form_submit_button("Scrape")
